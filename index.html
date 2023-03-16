@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main/style.css">
+    <link rel="stylesheet" href="./level/style.css">
+    <link rel="stylesheet" href="./editor/style.css">
+</head>
+<body>
+    <div id="desktop">
+        <div id="app">
+            <img src="images/iconclippy.png">
+            <span>
+                Clippy's Adventures
+            </span>
+        </div>
+        <nav>
+            <img src="images/mac-folder.png">
+            <img src="images/system-preferences-2021-06-03.png">
+            <img src="images/calendar-2021-04-29.png">
+            <img src="images/facetime-2021-04-30.png">
+            <img src="images/finder-2021-09-10.png">
+            <img src="images/figma-2021-05-05.png">
+            <img src="images/action-camera-master-editor-2022-10-07.png">
+            <img src="images/microsoft-word-2022-08-02.png">
+            <img src="images/typora-2022-02-03.png">
+            <img src="images/safari-2021-06-02.png">
+            <img src="images/terminal-2021-06-03.png">
+            <a href="https://www.ls-a.fr/qui-sommes-nous" target="_blank"><img src="images/Component_6icon_lsa_1.png"></a>
+            <img src="images/maps-2021-05-25.png">
+            <img src="images/music-2021-05-25.png">
+        </nav>
+    </div>
+
+    <script>
+        // Close window
+        function closeWindowListener(element) {
+            element.addEventListener("click", () => {
+                body.removeChild(body.lastChild);
+            })
+        }
+    </script>
+    <script type="text/javascript" src="./settings/script.js"></script>
+    <script type="text/javascript" src="./editor/script.js"></script>
+    <script type="text/javascript" src="./level/script.js"></script>
+    <script type="text/javascript" src="./main/script.js"></script>
+</body>
+</html>

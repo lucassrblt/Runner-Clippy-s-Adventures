@@ -1,0 +1,137 @@
+#level-window-content {
+    overflow: hidden;
+    height: 420px;
+    font-family: Arcade, sans-serif;
+    color: white;
+}
+
+/* RUNNER */
+
+#level {
+    border: 1px solid;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: cyan;
+    background-image: url("../images/runner/Background2.png");
+    /* background-size: cover; */
+}
+
+ #obstacles-container {
+    animation: text-scrolling 20s linear infinite;
+    justify-content: left;
+    display: flex;
+    flex-direction: row;
+    column-gap: 800px;
+    height: 100px;
+    overflow: hidden;
+}
+
+
+
+#obstacles-container * {
+    flex-shrink: 0;
+    column-width: 100px;
+} 
+
+.obstacle-A {
+    height: 0;
+}
+
+.obstacle-B {
+    height: 50px;
+    align-self: end;
+    background-image: url("../images/runner/monster.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.obstacle-C {
+    height: 50px;
+    align-self: top;
+    background-image: url("../images/runner/monster.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#level-ground {
+    height: 150px;
+    background-image: url("../images/runner/ground.png");
+    background-size: cover;
+} 
+
+#start-screen{
+    cursor: pointer;
+    position: absolute;
+    animation: blink-animation .8s linear infinite;
+    height: 20px;
+    text-align: center;
+    width: 250px;
+    padding: 200px 250px;
+}
+
+
+
+#char {
+    position: absolute;
+    background-image: url("../images/runner/clippy.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-self: end;
+    height: 70px;
+    left: 35%;
+    width: 50px;
+}
+
+
+.jumping {
+    animation: jump 500ms;
+}
+
+
+.crouching{
+    background-image: url("../images/runner/crouch-clippy.png") !important;
+    height: 35px !important;
+}
+
+
+
+@keyframes jump {
+    0% {
+    margin-bottom: 0px;
+    }
+    50% {
+    margin-bottom: 130px;
+    }
+    100% {
+    margin-bottom: 0px;
+    }
+}
+
+.ending-screen {
+    position: absolute;
+    width: 750px;
+    height: inherit;
+    background-color: #000000dd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ending-screen span {
+    font-size: 30px;
+    animation: blink-animation .8s linear infinite;
+} 
+
+.none
+{
+    display: none;
+}
+
+.score
+{
+    position: absolute;
+    font-size: 20px;
+    animation: blink-animation .8s linear infinite;
+}
